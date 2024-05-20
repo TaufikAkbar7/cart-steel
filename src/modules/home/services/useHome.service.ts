@@ -41,14 +41,15 @@ const home_onQuantityProduct = ({ id, type }: IQuantityProductProps) => {
 }
 
 const home_calculateSubTotal = computed(() => {
-    console.log(home_selectedItems)
-    // const subTotal = home_selectedItems.value.reduce((total, item) => item.totalPrice + total, 0)
-    return useCurrencyFormat(0)
+    const getSelectedItems = home_products.value.filter(product => home_selectedItems.value.includes(product.id))
+    const subTotal = getSelectedItems.reduce((total, item) => item.totalPrice + total, 0)
+    return useCurrencyFormat(subTotal)
 })
 
 const home_calculateTotal = computed(() => {
-    // const total = home_selectedItems.value.reduce((total, item) => item.totalPrice + total, 0) + 150000
-    return useCurrencyFormat(0)
+    const getSelectedItems = home_products.value.filter(product => home_selectedItems.value.includes(product.id))
+    const total = getSelectedItems.reduce((total, item) => item.totalPrice + total, 0) + 150000
+    return useCurrencyFormat(total)
 })
 
 return {
