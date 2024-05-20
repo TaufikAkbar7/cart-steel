@@ -1,4 +1,4 @@
-import type { Ref, ComputedRef } from "vue"
+import type { Ref, ComputedRef } from 'vue'
 
 export interface IQuantityProductProps {
   id: string
