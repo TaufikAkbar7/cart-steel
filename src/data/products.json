@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": "aae3f831-8d06-4a89-8edd-f93d6a794f76",
+      "name": "Nike Air Max Plus",
+      "type": "Men's Shoes",
+      "colors": "Pure Platinum/Black/White/University Red",
+      "price": 2669000,
+      "totalPrice": 2669000,
+      "quantity": 1,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/de09f84f-ef2d-4ee6-849e-82ae2d47bbbb/air-max-plus-shoes-dz4jLD.png"
+    },
+    {
+      "id": "0781e711-37c5-4750-9276-444ac547d18f",
+      "name": "Air Jordan 1 Low",
+      "type": "White/Green Glow/Black",
+      "colors": "Pure Platinum/Black/White/University Red",
+      "price": 1729000,
+      "totalPrice": 1729000,
+      "quantity": 1,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b95033d3-2b18-4e8e-b386-56e4209b3352/air-jordan-1-low-shoes-zTWr01.png"
+    },
+    {
+      "id": "3154fdcc-eb7f-4a01-9888-2c5b508b6894",
+      "name": "Air Jordan 1 Low",
+      "type": "Women's Shoes",
+      "colors": "White/Aluminium/Wolf Grey",
+      "price": 2669000,
+      "totalPrice": 2669000,
+      "quantity": 1,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b587cf81-b49a-4200-9a7c-8daa033ed393/air-jordan-1-low-shoes-459b4T.png"
+    },
+    {
+      "id": "5f7c7f3e-c8f1-4967-b346-f8a6726073de",
+      "name": "Nike Air Force 1 '07 EasyOn",
+      "type": "Shoes",
+      "colors": "White/Photo Blue",
+      "price": 2669000,
+      "totalPrice": 2669000,
+      "quantity": 1,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7393b8e2-4350-45c1-bc82-2c83f7cd3777/air-force-1-07-easyon-shoes-LKXPhZ.png"
+    }
+  ]
+}
