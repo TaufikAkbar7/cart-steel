@@ -5,11 +5,7 @@
       <CardCheckout />
     </div>
 
-    <AppBaseModal
-      :show="home_isOpenModal"
-      description="Successfully save cart data"
-      @close="home_onOpenCloseModal"
-    />
+    <AppBaseModal :show="home_isOpenModal" description="Successfully save cart data" @close="home_onOpenCloseModal" />
   </section>
 </template>
 <script lang="ts" setup>
