@@ -967,36 +967,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vuelidate/core@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@vuelidate/core@npm:2.0.3"
-  dependencies:
-    vue-demi: ^0.13.11
-  peerDependencies:
-    "@vue/composition-api": ^1.0.0-rc.1
-    vue: ^2.0.0 || >=3.0.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-  checksum: 3240a26135c2b1681d226f445264ffdb206f41bf554e09e2ac9e97e89ed7b804667628dddb8dc4da758fba8063e0d41939c196f79c74bf46df1081a18ba106cb
-  languageName: node
-  linkType: hard
-
-"@vuelidate/validators@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@vuelidate/validators@npm:2.0.4"
-  dependencies:
-    vue-demi: ^0.13.11
-  peerDependencies:
-    "@vue/composition-api": ^1.0.0-rc.1
-    vue: ^2.0.0 || >=3.0.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-  checksum: 4dfb24076533ba962ca18ffbfd4c24fc98f6b209bb12eb36a9344a59839ad97375c815f96dd4b415de8e81bd5dae4dc2b28efa62721ac450b707e92b40c4afba
-  languageName: node
-  linkType: hard
-
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -1291,8 +1261,6 @@ __metadata:
     "@vue/eslint-config-typescript": ^13.0.0
     "@vue/test-utils": ^2.4.5
     "@vue/tsconfig": ^0.5.1
-    "@vuelidate/core": ^2.0.3
-    "@vuelidate/validators": ^2.0.4
     autoprefixer: ^10.4.19
     eslint: ^8.57.0
     eslint-plugin-vue: ^9.23.0
@@ -4324,22 +4292,6 @@ __metadata:
     vue-demi-fix: bin/vue-demi-fix.js
     vue-demi-switch: bin/vue-demi-switch.js
   checksum: 40a0470caea8312e0d4df2541f141c36c768dfc7f2f7d41f0f28ba29df11d3119e2f09b94c815f13b7c7f3f45dbc247b0e9e0c02a1800e2823e241c1d771e39b
-  languageName: node
-  linkType: hard
-
-"vue-demi@npm:^0.13.11":
-  version: 0.13.11
-  resolution: "vue-demi@npm:0.13.11"
-  peerDependencies:
-    "@vue/composition-api": ^1.0.0-rc.1
-    vue: ^3.0.0-0 || ^2.6.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-  bin:
-    vue-demi-fix: bin/vue-demi-fix.js
-    vue-demi-switch: bin/vue-demi-switch.js
-  checksum: 0fbe9bf8ab7fe498ffa2bbd0cfc8f6f43a6bbaa5eda3e20ef1b70dca7c8b0ddb216a7ff2f632b694fe0735805638975abb441c621ec0bd2e6d4656353f316c15
   languageName: node
   linkType: hard
 

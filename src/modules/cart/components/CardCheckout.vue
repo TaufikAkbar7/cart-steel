@@ -20,20 +20,16 @@
           <span class="text-base font-bold">{{ cart_calculateTotal }}</span>
         </div>
       </div>
-      <AppBaseButton
-        name="Checkout"
-        custom-class="mt-6"
-        :disabled="cart_selectedItems.length === 0"
-        @on-click="cart_onOpenCloseModal"
-      />
+      <AppBaseButton name="Checkout" custom-class="mt-6" :disabled="cart_selectedItems.length === 0"
+        @on-click="cart_onOpenCloseModal" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { inject } from 'vue'
-import { IUseCartServiceInject } from '../interfaces/cart.interface'
 
+// @ts-ignore
 const { cart_calculateSubTotal, cart_calculateTotal, cart_selectedItems, cart_onOpenCloseModal } =
-  inject<IUseCartServiceInject>('useCartService')
+  inject<any>('useCartService')
 </script>
 <style lang=""></style>

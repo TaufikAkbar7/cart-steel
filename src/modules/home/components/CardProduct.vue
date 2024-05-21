@@ -20,6 +20,7 @@ interface IProps {
 }
 
 withDefaults(defineProps<IProps>(), {
+  // @ts-ignore
   product: () => {
     return {
       id: '',

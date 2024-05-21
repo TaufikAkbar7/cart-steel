@@ -1,15 +1,7 @@
 <template>
-  <div
-    class="flex flex-col gap-x-5 border-t-2 border-gray py-5 items-start px-5 sm:flex-row sm:items-center"
-  >
-    <input
-      class="cursor-pointer w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
-      type="checkbox"
-      :id="product.name"
-      :name="product.name"
-      :value="product.id"
-      v-model="value"
-    />
+  <div class="flex flex-col gap-x-5 border-t-2 border-gray py-5 items-start px-5 sm:flex-row sm:items-center">
+    <input class="cursor-pointer w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+      type="checkbox" :id="product.name" :name="product.name" :value="product.id" v-model="value" />
     <div class="py-3.5 flex justify-center w-full sm:py-0 sm:block sm:w-auto">
       <img :src="product.image" class="w-32 object-contain rounded-lg sm:w-28" />
     </div>
@@ -32,11 +24,8 @@
             <option :key="size" v-for="size in sizes" :value="size">{{ size }}</option>
           </select>
           <div class="border border-gray flex flex-row gap-x-3 items-center py-1 px-2.5 rounded-lg">
-            <button
-              :disabled="quantity <= 1"
-              class="disabled:cursor-not-allowed"
-              @click.stop="onClickQuantity({ id: product.id, type: 'down' })"
-            >
+            <button :disabled="quantity <= 1" class="disabled:cursor-not-allowed"
+              @click.stop="onClickQuantity({ id: product.id, type: 'down' })">
               <v-icon name="hi-minus" fill="#969696" />
             </button>
             <span>{{ quantity }}</span>
@@ -64,9 +53,9 @@ interface IProps {
 }
 
 const props = withDefaults(defineProps<IProps>(), {
+  // @ts-ignore
   product: () => {
     return {
-      productName: '',
       name: '',
       type: '',
       colors: '',
