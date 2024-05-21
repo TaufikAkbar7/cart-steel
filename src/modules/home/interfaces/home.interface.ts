@@ -13,6 +13,8 @@ export interface IUseHomeServiceInject {
   home_selectedItems: Ref<IProduct[]>
   home_calculateSubTotal: ComputedRef<number>
   home_calculateTotal: ComputedRef<number>
+  home_isOpenModal: Ref<boolean>
+  home_onOpenCloseModal: () => void
 }
 
 export interface IProduct {

@@ -24,6 +24,7 @@
         name="Checkout"
         custom-class="mt-6"
         :disabled="home_selectedItems.length === 0"
+        @on-click="home_onOpenCloseModal"
       />
     </div>
   </div>
@@ -32,7 +33,7 @@
 import { inject } from 'vue'
 import { IUseHomeServiceInject } from '../interfaces/home.interface'
 
-const { home_calculateSubTotal, home_calculateTotal, home_selectedItems } =
+const { home_calculateSubTotal, home_calculateTotal, home_selectedItems, home_onOpenCloseModal } =
   inject<IUseHomeServiceInject>('useHomeService')
 </script>
 <style lang=""></style>

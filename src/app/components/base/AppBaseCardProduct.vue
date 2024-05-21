@@ -3,7 +3,7 @@
     class="flex flex-col gap-x-5 border-t-2 border-gray py-5 items-start px-5 sm:flex-row sm:items-center"
   >
     <input
-      class="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+      class="cursor-pointer w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
       type="checkbox"
       :id="product.name"
       :name="product.name"

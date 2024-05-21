@@ -4,7 +4,7 @@
       <h1 class="font-bold text-4xl">Cart</h1>
       <div class="flex items-center gap-x-2">
         <input
-          class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+          class="cursor-pointer w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
           type="checkbox"
           id="select-all"
           name="select-all"

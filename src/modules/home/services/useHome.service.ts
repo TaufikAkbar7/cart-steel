@@ -7,6 +7,7 @@ export const useHomeService = () => {
   const home_selectedItems = ref<string[]>([])
   const home_isSelectedAll = ref(false)
   const home_products = ref<IProduct[]>(Products.data)
+  const home_isOpenModal = ref(false)
 
   watch(home_isSelectedAll, (value) => {
     if (value) {
@@ -57,6 +58,10 @@ export const useHomeService = () => {
     return useCurrencyFormat(total)
   })
 
+  const home_onOpenCloseModal = () => {
+    home_isOpenModal.value = !home_isOpenModal.value
+  }
+
   return {
     home_selectedItems,
     home_isSelectedAll,
@@ -64,6 +69,8 @@ export const useHomeService = () => {
     home_onDeleteProduct,
     home_onQuantityProduct,
     home_calculateSubTotal,
-    home_calculateTotal
+    home_calculateTotal,
+    home_isOpenModal,
+    home_onOpenCloseModal
   }
 }

@@ -8,9 +8,9 @@ import App from './App.vue'
 import router from './router'
 
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { FaTrash, BiPlusLg, HiMinus } from 'oh-vue-icons/icons'
+import { FaTrash, BiPlusLg, HiMinus, BiCheckCircle } from 'oh-vue-icons/icons'
 
-addIcons(FaTrash, HiMinus, BiPlusLg)
+addIcons(FaTrash, HiMinus, BiPlusLg, BiCheckCircle)
 
 const app = createApp(App)
 
