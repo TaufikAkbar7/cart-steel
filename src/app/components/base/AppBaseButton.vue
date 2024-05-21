@@ -13,8 +13,8 @@
 <script setup lang="ts">
 interface IProps {
   name: string
-  customClass: string
-  disabled: boolean
+  customClass?: string
+  disabled?: boolean
 }
 
 withDefaults(defineProps<IProps>(), {

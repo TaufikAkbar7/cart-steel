@@ -11,7 +11,7 @@
             <p>{{ description }}</p>
           </div>
 
-          <AppBaseButton name="Close" @on-click="$emit('close')" />
+          <AppBaseButton name="Close" @on-click="emit('onClose')" />
         </div>
       </div>
     </Transition>
@@ -28,6 +28,8 @@ withDefaults(defineProps<IProps>(), {
   show: false,
   description: 'description'
 })
+
+const emit = defineEmits(['onClose'])
 </script>
 
 <style>

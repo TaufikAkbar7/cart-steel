@@ -5,7 +5,7 @@
       <div class="flex flex-col gap-y-1 border-b py-5 mt-1">
         <div class="flex flex-wrap justify-between items-center">
           <span class="text-sm sm:text-base">Subtotal</span>
-          <span class="text-sm sm:text-base">{{ home_calculateSubTotal }}</span>
+          <span class="text-sm sm:text-base">{{ cart_calculateSubTotal }}</span>
         </div>
         <div class="flex flex-wrap justify-between items-center">
           <span class="text-sm sm:text-base">Estimated Delivery</span>
@@ -17,19 +17,23 @@
         </div>
         <div class="flex flex-wrap justify-between items-center mt-2.5 border-t pt-3">
           <span>Total</span>
-          <span class="text-base font-bold">{{ home_calculateTotal }}</span>
+          <span class="text-base font-bold">{{ cart_calculateTotal }}</span>
         </div>
       </div>
-      <AppBaseButton name="Checkout" custom-class="mt-6" :disabled="home_selectedItems.length === 0"
-        @on-click="home_onOpenCloseModal" />
+      <AppBaseButton
+        name="Checkout"
+        custom-class="mt-6"
+        :disabled="cart_selectedItems.length === 0"
+        @on-click="cart_onOpenCloseModal"
+      />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { inject } from 'vue'
-import { IUseHomeServiceInject } from '../interfaces/home.interface'
+import { IUseCartServiceInject } from '../interfaces/cart.interface'
 
-const { home_calculateSubTotal, home_calculateTotal, home_selectedItems, home_onOpenCloseModal } =
-  inject<IUseHomeServiceInject>('useHomeService')
+const { cart_calculateSubTotal, cart_calculateTotal, cart_selectedItems, cart_onOpenCloseModal } =
+  inject<IUseCartServiceInject>('useCartService')
 </script>
 <style lang=""></style>

@@ -12,7 +12,7 @@
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
     "esModuleInterop": true,

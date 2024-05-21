@@ -9,21 +9,21 @@
           id="select-all"
           name="select-all"
           value="true"
-          v-model="home_isSelectedAll"
+          v-model="cart_isSelectedAll"
         />
         <label class="text-base font-semibold" for="select-all"
-          >Select all ({{ home_products.length }})</label
+          >Select all ({{ cart_products.length }})</label
         >
       </div>
     </div>
-    <div v-if="home_products.length > 0" class="flex flex-col gap-y-2 mt-2 bg-white">
+    <div v-if="cart_products.length > 0" class="flex flex-col gap-y-2 mt-2 bg-white">
       <AppBaseCardProduct
         :key="product.id"
-        v-for="product in home_products"
+        v-for="product in cart_products"
         :product="product"
-        v-model="home_selectedItems"
-        @on-delete="home_onDeleteProduct"
-        @on-quantity="home_onQuantityProduct"
+        v-model="cart_selectedItems"
+        @on-delete="cart_onDeleteProduct"
+        @on-quantity="cart_onQuantityProduct"
       />
     </div>
     <div v-else class="flex justify-center items-center">
@@ -33,14 +33,14 @@
 </template>
 <script setup lang="ts">
 import { inject } from 'vue'
-import { IUseHomeServiceInject } from '../interfaces/home.interface'
+import { IUseCartServiceInject } from '../interfaces/cart.interface'
 
 const {
-  home_isSelectedAll,
-  home_onDeleteProduct,
-  home_onQuantityProduct,
-  home_products,
-  home_selectedItems
-} = inject<IUseHomeServiceInject>('useHomeService')
+  cart_isSelectedAll,
+  cart_onDeleteProduct,
+  cart_onQuantityProduct,
+  cart_products,
+  cart_selectedItems
+} = inject<IUseCartServiceInject>('useCartService')
 </script>
 <style lang=""></style>
